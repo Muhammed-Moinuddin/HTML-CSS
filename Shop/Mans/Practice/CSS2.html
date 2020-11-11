@@ -1,0 +1,80 @@
+<style>
+    .injected-text {
+      margin-bottom: -25px;
+      text-align: center;
+    }
+  
+    .box {
+      border-style: solid;
+      border-color: black;
+      border-width: 5px;
+      text-align: center;
+    }
+  
+    .yellow-box {
+      background-color: yellow;
+      padding: 10px;
+      margin: 40px 20px 20px 40px;
+    }
+  
+    .red-box {
+      background-color: crimson;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+    }
+
+    .blue-box {
+      background-color: blue;
+      color: #fff;
+      padding: 10px;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+    .heart {
+    position: absolute;
+    margin: auto;
+    top: 30;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+  }
+  .heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+  </style>
+  <h5 class="injected-text">margin</h5>
+  
+  <div class="box yellow-box">
+    <h5 class="box red-box">padding</h5>
+    <h5 class="box blue-box">padding</h5>
+  </div>
+  <div class="heart"></div>
+<!--The animation properties control how the animation should behave 
+  and the @keyframes rule controls what happens during that animation.-->

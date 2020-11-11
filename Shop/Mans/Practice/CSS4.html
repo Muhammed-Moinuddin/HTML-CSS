@@ -1,0 +1,62 @@
+<style>
+    body{
+      background:linear-gradient(45deg,#CCFFFF, #FFCCCC);  
+    }
+    div {
+      width: 60%;
+      height: 200px;
+      margin-top: 20px;
+    }
+    .first {
+      background-color: red;
+      position: absolute;
+  
+    }
+    .second {
+      background-color: blue;
+      position: absolute;
+      left: 40px;
+      top: 50px;
+      z-index: 1;
+    }
+    .third {
+      background-color:yellow;
+      position: absolute;
+      left: 80px;
+      top: 100px;
+      z-index: 2;
+    }
+    .third:hover{
+        transform: scale(1.5);
+    }
+    .ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #06c03e,
+      #e22bc4
+    );
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 20%;
+    bottom: 50px;
+    transform: skew(24deg);
+  }
+  #ball2 {
+    left: 65%;
+    bottom: 50px;
+    transform: scale(2);
+  }
+  </style>
+<body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div> 
+    <div class="ball" id= "ball1"></div>
+    <div class="ball" id= "ball2"></div>   
+</body>    
+  

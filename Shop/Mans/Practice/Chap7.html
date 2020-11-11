@@ -1,0 +1,160 @@
+<html>
+<html>
+<head>
+    <title>Chap7</title>
+</head>
+<body>
+    <h2>Text Input Ways</h2>
+    <form action="http://www.example.com/subscribe.php" method="POST">
+    <p>
+      Username:
+      <input type="text" name="username" maxlength="15">
+    </p>
+    <p>
+      Password:
+      <input type="password" name="password" maxlength="10">
+    </p>
+    </form>   
+    <form action="http://www.example.com/subscribe.php" method="GET">
+    <p>What do you think of my website?</p>
+    <textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
+    </form>
+    <h2>Selection Input Ways</h2>
+    <form action="http://www.example.com/subscribe.php" method="post">
+    <p>
+        What type of website do you like??
+    <br/>
+    <input type="radio" name="Like" value="Classic" checked="checked"/>
+    Classic
+    <input type="radio" name="Like" value="Modern">
+    Modern
+    <input type="radio" name="Like" value="Future">
+    Future
+    </p>
+    <p>
+        Please select your favourite music services:
+    <br>
+    <input type="checkbox" name="music" value="itunes" checked="checked">
+    itunes
+    <input type="checkbox" name="music" value="last.fm">
+    last.fm
+    <input type="checkbox" name="music" value="spotify">
+    Spotify    
+    </p>
+    <p>What is your favourite sport?</p>
+      <select name="sport" id="favouritesport">
+        <option value="cricket">Cricket</option>
+        <option value="tennis">Tennis</option>
+        <option value="football" selected>Football</option>  
+        <option value="hockey">Hockey</option>
+      </select>
+    <p>Who is your favourite actor? (use Ctrl-key on pc and Command-key on Mac for multiple selection)</p>  
+      <select name="actor" id="favouriteactor" size="3" multiple>
+        <option value="shahrukh">Shahrukh Khan</option>
+        <option value="fahad">Fahad Mustafa</option>
+        <option value="amir" selected>Amir Khan</option>  
+        <option value="fawad">Fawad Khan</option>
+      </select>
+    </form>
+    <h2>Buttons</h2>
+    <form action="http://www.example.com/subscribe.php" method="post">
+      <p>Upload your song in mp3 format:</p>
+      <input type="file" name="user-song"> 
+      <input type="submit" value="Upload">
+      <p>Subscribe to our email list....!</p>
+      <input type="text" name="email">
+      <input type="image" src="images/subscribe.jpg" width="100" height="20"> <br>
+      <br>
+      <button >Add</button>
+      <input type="hidden" name="bookmark" >
+    </form>
+    <h2>Labelling Form Controls</h2>
+    <form action="http://www.example.com/subscribe.php" method="get">
+      <label>
+        Age: <input type="text" name="age" ></label>  
+      <br>
+      Gender:
+      <br>
+      <input type="radio" name="gender" value="female" id="f" >
+      <label for="f">Female</label>
+      <input type="radio" name="gender" value="male" id="m">
+      <label for="m">Male</label>
+      <h2>Grouping Form Elements</h2> 
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label>Email: <br>
+        <input type="text" name="email"> </label> <br>
+        <label>Mobile:<br>
+        <input type="text" name="mobile"> </label> <br>
+        <label>Telephone:</label> <br>
+        <input type="text" name="telephone"></label> 
+      </fieldset>
+    </form>
+    <h2>HTML 5</h2> 
+    <form action="http://www.example.com/login/" method="post">
+    <Label>Username: <input type="text" name="username" required></Label>  
+    <br>
+    <Label>Password: <input type="password" name="password" required></Label> 
+    <input type="submit" name="Submit"> 
+    </form>
+    <form action="http://www.example.com/bookings/" method="post">
+    <label for="username">Departure date:</label>
+    <input type="date" name="departure" required>
+    <input type="submit" name="Submit" >
+    <form action="http://www.example.org/subscribe.php">
+      <p>Please enter your email address:</p>
+      <input type="email" name="email" />
+      <input type="submit" value="Submit" />
+      <p>Please enter your website address:</p>
+      <input type="url" name="website" />
+      <input type="submit" value="Submit" />
+      <p>Search:</p>
+      <input type="search" name="search" placeholder="Enter keyword">
+      <input type="submit" name="Submit">
+    </form>
+    <h2>Example</h2>
+    <form action="http://www.example.com/subscribe.php" method="post">
+      <fieldset>
+        <legend>Your Details:</legend>
+         <label>Name: <input type="text" name="name"></label>
+         <br>
+         <label>Email: <input type="email" name="email"></label> 
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Your Review: </legend>
+        <label>How did you hear about us?
+          <select name="marketingreview" id="marketing">
+            <option value="google" selected>Google</option>
+            <option value="facebook">Facebook</option>
+            <option value="friend">Friend</option>
+            <option value="others">Other</option>
+          </select> 
+        </label>
+        <br>
+        <p> Would you visit again? </p>
+        <label><input type="radio" name="servicereview" id="service" value="yes"> Yes</label>
+        <label><input type="radio" name="servicereview" id="service" value="no"> No</label>
+        <label> <input type="radio" name="servicereview" id="service" value="maybe"> Maybe</label>
+        <label>
+        <p>Comments:
+          <br>
+          <textarea name="comments" id="cmt" cols="50" rows="5"></textarea></p>
+        </label>
+        <input type="checkbox" name="Signingforupdates" id="Sign">
+        <label for="Sign">Sign me up for email updates</label>
+        <br>
+        <input type="submit" value="Submit reviews">
+      </fieldset>
+    </form>
+</body>
+</html>
+<!--1)Every <form> element requires an action attribute. Its value
+is the URL for the page on the server that will receive the
+information in the form when it is submitted.
+2)Size attribute is used with input tag but in older forms to indicate
+ width of text input
+3)Cols and Rows attribute were used in older forms of textarea,comment
+4)You should use Css for Upload button and file
+5)Inside a <button> element you can put text (and tags like <i>, <strong>, <br>, <img>, etc.).
+This is not possible with a button created with the <input> element!-->

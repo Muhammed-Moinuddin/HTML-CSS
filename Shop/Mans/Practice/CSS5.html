@@ -1,0 +1,70 @@
+<style>
+    div {
+      height: 40px;
+      width: 40%;
+      background: black;
+      margin: 50px auto;
+      border-radius: 5px;
+      position: relative;
+    }
+  
+    #rect {
+        animation-name: rainbow;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+    }
+    @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+     }
+     25% {
+      opacity: 0.1;
+      top: 25px;
+     }
+    50% {
+      background-color: green;
+      top: 50px;
+     }
+     75% {
+      opacity: 0.1;
+      top: 75px;
+     }
+    100% {
+      background-color: yellow;
+      top: 0px;
+     } 
+    }
+
+   img:hover {
+    animation-name: width;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+   }
+
+   @keyframes width {
+    100% {
+      width: 40px;
+    }
+   }
+   button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+@keyframes background-color {
+    100% {
+      background-color:#4791d0;
+    }
+  }
+</style>
+  <div id="rect"></div>  
+  <img src="https://bit.ly/smallgooglelogo" alt="Google's Logo" />
+  <button>Register</button>
